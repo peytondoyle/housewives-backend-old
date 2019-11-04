@@ -10,9 +10,5 @@ class HousewivesController < ActionController::API
     render json: @housewife
   end
 
-  def atl_housewives
-    housewives = Housewife.all
-    housewives.select { |housewife| housewife.seasons.first.city == "Atlanta" }
-  end
 
 end

@@ -15,13 +15,6 @@ class HousewifeSerializer < ActiveModel::Serializer
     else
       return nil
     end
-    # byebug
-    # {city:  ciudad}
-    # self.object.seasons.map do |season_obj|
-    #   {
-    #     city: season_obj.city
-    #   }
-    # end
   end
 
   def seasons
