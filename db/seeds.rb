@@ -266,7 +266,7 @@ s1mary = Tagline.find_or_create_by(tagline: "I don't make money, I spend money."
 s1lynda = Tagline.find_or_create_by(tagline: "I give people enough rope to hang themselves, and the smart people don't.", housewife_id: lynda.id, season_id: rhodc1.id)
 s1cat = Tagline.find_or_create_by(tagline: "I'm here for a good time, not a long time.", housewife_id: cat.id, season_id: rhodc1.id)
 s1michaele = Tagline.find_or_create_by(tagline: "People have a hard time saying no to me and that’s just been my blessing.", housewife_id: michaele.id, season_id: rhodc1.id)
-s1stacie = Tagline.find_or_create_by(tagline: "DC is my town and I thrive in it.", housewife_id: brandir.id, season_id: rhodc1.id)
+s1stacie = Tagline.find_or_create_by(tagline: "DC is my town and I thrive in it.", housewife_id: stacie.id, season_id: rhodc1.id)
 
 # RHOM HOUSEWIVES
 lea = Housewife.find_or_create_by(firstname:"Lea", lastname:"Black", current: false, image:"https://vignette.wikia.nocookie.net/real-housewives/images/4/4f/Lea-black-full.png/revision/latest?cb=20151115210707")
