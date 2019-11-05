@@ -1,5 +1,5 @@
 class HousewifeSerializer < ActiveModel::Serializer
-  attributes :firstname, :lastname, :city, :image, :current, :seasons, :taglines
+  attributes :id, :firstname, :lastname, :city, :image, :current, :seasons, :taglines
 
   def taglines
     self.object.taglines.map do |tagline_obj|
