@@ -4,7 +4,8 @@ class HousewifeSerializer < ActiveModel::Serializer
   def taglines
     self.object.taglines.map do |tagline_obj|
       num = tagline_obj.season.season
-      {num => tagline_obj.tagline}
+      {season => num, 
+      tagline => tagline_obj.tagline}
     end
   end
 
