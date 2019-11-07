@@ -1,5 +1,5 @@
 class HousewifeSerializer < ActiveModel::Serializer
-  attributes :id, :firstname, :lastname, :city, :image, :current, :seasons, :taglines
+  attributes :id, :firstname, :lastname, :city, :image, :current, :seasons, :totalseasons, :taglines
 
   def taglines
     self.object.taglines.map do |tagline_obj|
@@ -22,6 +22,10 @@ class HousewifeSerializer < ActiveModel::Serializer
     self.object.seasons.map do |season_obj|
       season_obj.season
     end
+  end
+
+  def totalseasons
+    self.object.seasons.length
   end
 
 
