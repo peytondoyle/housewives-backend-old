@@ -703,6 +703,8 @@ s4candiace = Tagline.find_or_create_by(tagline: "Now that I'm marrying my prince
 User.destroy_all
 Rating.destroy_all
 peyton = User.find_or_create_by(username: "peyton", password: "123", image: "https://avatars2.githubusercontent.com/u/51932681?s=460&v=4", favcity: "New York", favhousewife: "Nene")
+louis = User.find_or_create_by(username: "peyton", password: "123", image: "https://avatars2.githubusercontent.com/u/51932681?s=460&v=4", favcity: "New York", favhousewife: "Nene")
 rating1 = Rating.find_or_create_by(rating: 3, user_id: peyton.id, housewife_id: nene.id)
+rating2 = Rating.find_or_create_by(rating: 5, user_id: louis.id, housewife_id: nene.id)
 
 
