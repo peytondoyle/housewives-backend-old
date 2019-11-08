@@ -29,7 +29,7 @@ class RatingsController < ActionController::API
       render json: rating
     end
 
-    def getAllQueenRatings
+    def getAllHousewifeRatings
       housewife = Housewife.find(params[:id])
       rating = Rating.where(housewife_id: housewife)
       render json: rating
