@@ -699,4 +699,10 @@ s4robyn = Tagline.find_or_create_by(tagline: "The shorter my hair, the shorter m
 s4ashley = Tagline.find_or_create_by(tagline: "Karma is a bitch. But luckily, I'm on her good side.", housewife_id: ashley.id, season_id: rhop4.id)
 s4candiace = Tagline.find_or_create_by(tagline: "Now that I'm marrying my prince, this sleeping beauty is woke.", housewife_id: candiace.id, season_id: rhop4.id)
 
+# FAKE USERS & RATINGS
+User.destroy_all
+Rating.destroy_all
+peyton = User.find_or_create_by(username: "peyton", password: "123", image: "https://avatars2.githubusercontent.com/u/51932681?s=460&v=4", favcity: "New York", favhousewife: "Nene")
+rating1 = Rating.find_or_create_by(rating: 3, user_id: peyton.id, housewife_id: nene.id)
+
 
