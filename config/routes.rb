@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :ratings, only: [:index, :create, :show, :update]
   resources :users, only: [:index, :create, :show, :update]
   post 'ratings/:id/edit', :to => 'ratings#update'
+  delete 'ratings/:id', :to => 'ratings#destroy'
   get 'users/:id/ratings', :to => 'ratings#ratingsByUser'
   get 'housewives/:id/ratings', :to => 'ratings#getAllHousewifeRatings'
 
