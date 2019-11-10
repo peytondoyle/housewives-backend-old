@@ -26,7 +26,7 @@ class RatingsController < ActionController::API
     def destroy
       @rating = Rating.find(params[:id])
       @rating.destroy
-      # redirect_to '/patients/new', :notice => "Your patient has been deleted"
+      render json:@rating
     end
 
     def ratingsByUser
