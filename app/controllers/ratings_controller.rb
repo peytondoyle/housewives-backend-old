@@ -2,8 +2,8 @@ class RatingsController < ActionController::API
 
     def create
       # byebug
-      @rating = Rating.find_or_create_by(rating_params)
-      render json: @rating
+      rating = Rating.find_or_create_by(rating_params)
+      render json: rating
     end
 
     def show
