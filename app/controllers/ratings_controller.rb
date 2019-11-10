@@ -23,6 +23,12 @@ class RatingsController < ActionController::API
       render json: newrating
     end
 
+    def destroy
+      @rating = Rating.find(params[:id])
+      @rating.destroy
+      # redirect_to '/patients/new', :notice => "Your patient has been deleted"
+    end
+
     def ratingsByUser
       user = User.find(params[:id])
       rating = Rating.where(user_id: user)
