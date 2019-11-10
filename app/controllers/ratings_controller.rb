@@ -13,7 +13,7 @@ class RatingsController < ActionController::API
     end
 
     def index
-        render({json: Rating.all})
+      render({json: Rating.all})
     end
 
     def update
