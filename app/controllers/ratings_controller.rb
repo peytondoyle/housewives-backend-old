@@ -2,9 +2,8 @@ class RatingsController < ActionController::API
 
     def create
       # byebug
-      rating = Rating.create(rating_params)
-      puts rating_params
-      render json: rating
+      @rating = Rating.find_or_create_by(rating_params)
+      render json: @rating
     end
 
     def show
@@ -45,7 +44,7 @@ class RatingsController < ActionController::API
     private
 
     def rating_params
-      params.permit(:id, :rating, :user_id, :housewife_id)
+      params.permit(:rating, :user_id, :housewife_id)
       # params.permit(:rating, :user_id, :housewife_id, :id)
     end
 
