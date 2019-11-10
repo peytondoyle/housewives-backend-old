@@ -3,6 +3,7 @@ class RatingsController < ActionController::API
     def create
       # byebug
       rating = Rating.create(rating_params)
+      puts rating_params
       render json: rating
     end
 
