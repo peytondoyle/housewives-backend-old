@@ -44,9 +44,9 @@ class RatingsController < ActionController::API
     private
 
     def rating_params
-      Require(:rating).permit(:rating, :user_id, :housewife_id)
-      # params.permit(:rating, :user_id, :housewife_id)
-      # params.permit(:rating, :user_id, :housewife_id, :id)
+      # params.require(:rating).permit(:rating, :user_id, :housewife_id)
+      params.permit(:rating, :user_id, :housewife_id)
+      # byebug
     end
 
 
