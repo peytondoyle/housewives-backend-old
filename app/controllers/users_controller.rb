@@ -17,7 +17,7 @@ class UsersController < ActionController::API
   private
 
   def user_params
-    params.require(:user).permit(:name)
+    params.require(:user).permit(:name, :image, :favcity)
   end
 
 end
