@@ -311,7 +311,7 @@ s3lisah = Tagline.find_or_create_by(tagline: "Everyone loves to underestimate me
 # RHONJ HOUSEWIVES
 teresa = Housewife.find_or_create_by(firstname:"Teresa", lastname:"Guidice", current: true, image:"https://vignette.wikia.nocookie.net/real-housewives/images/6/6e/TeresaGiudice1.png/revision/latest?cb=20150917221841")
 jacqueline = Housewife.find_or_create_by(firstname:"Jacqueline", lastname:"Laurita", current: false, image:"https://www.bravotv.com/sites/bravo/files/field_person_full_photo/2016/05/jacqueline-laurita-full_0.png")
-caroline = Housewife.find_or_create_by(firstname:"Carolina", lastname:"Manzo", current: false, image:"https://www.bravotv.com/sites/bravo/files/legacy/images/person/body/2014/caroline-manzo-full.png")
+caroline = Housewife.find_or_create_by(firstname:"Caroline", lastname:"Manzo", current: false, image:"https://www.bravotv.com/sites/bravo/files/legacy/images/person/body/2014/caroline-manzo-full.png")
 dina = Housewife.find_or_create_by(firstname:"Dina", lastname:"Manzo", current: false, image:"https://www.bravotv.com/sites/bravo/files/legacy/images/person/body/2014/dina-manzo-full.png")
 danielle = Housewife.find_or_create_by(firstname:"Danielle", lastname:"Staub", current: false, image:"https://vignette.wikia.nocookie.net/real-housewives/images/e/eb/Danielle-staub-full.png/revision/latest?cb=20151117235136")
 melissa = Housewife.find_or_create_by(firstname:"Melissa", lastname:"Gorga", current: true, image:"https://speakerdata2.s3.amazonaws.com/photo/image/902651/melissa-gorga-full-1.png")
