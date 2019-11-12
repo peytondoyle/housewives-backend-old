@@ -2,7 +2,7 @@ class HousewivesController < ActionController::API
 
   def index
     housewives = Housewife.all
-    render json: housewives, include: [:taglines, :ratings]
+    render json: housewives, include: [:taglines, :ratings, :favorites]
   end
 
   def show

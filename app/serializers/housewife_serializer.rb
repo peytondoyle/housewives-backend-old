@@ -1,5 +1,5 @@
 class HousewifeSerializer < ActiveModel::Serializer
-  attributes :id, :firstname, :lastname, :city, :image, :current, :seasons, :totalseasons, :taglines, :ratings
+  attributes :id, :firstname, :lastname, :city, :image, :current, :seasons, :totalseasons, :taglines, :ratings, :favorites
 
   def taglines
     self.object.taglines.map do |tagline_obj|
@@ -12,6 +12,12 @@ class HousewifeSerializer < ActiveModel::Serializer
   def ratings
     self.object.ratings.map do |rating_obj|
       rating_obj.rating
+    end
+  end
+
+  def favorites
+    self.object.favorites.map do |fav_obj|
+      fav_obj.id
     end
   end
 
