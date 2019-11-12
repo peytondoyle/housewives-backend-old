@@ -700,9 +700,7 @@ s4ashley = Tagline.find_or_create_by(tagline: "Karma is a bitch. But luckily, I'
 s4candiace = Tagline.find_or_create_by(tagline: "Now that I'm marrying my prince, this sleeping beauty is woke.", housewife_id: candiace.id, season_id: rhop4.id)
 
 # FAKE USERS & RATINGS
-User.destroy_all
-Rating.destroy_all
-peyton = User.find_or_create_by(username: "peyton", password: "123", image: "https://avatars2.githubusercontent.com/u/51932681?s=460&v=4", favcity: "New York", favhousewife: "Nene")
-louis = User.find_or_create_by(username: "louis", password: "123", image: "https://avatars2.githubusercontent.com/u/51932681?s=460&v=4", favcity: "New York", favhousewife: "Nene")
+# User.destroy_all
+# Rating.destroy_all
 
 
