@@ -3,12 +3,12 @@ Rails.application.routes.draw do
   resources :housewives, only: [:index, :show]
   resources :taglines, only: [:index, :show]
   resources :seasons, only: [:index, :show]
-  resources :ratings, only: [:index, :create, :show, :update]
+  resources :ratings, only: [:index, :create, :show]
   resources :comments, only: [:index, :create, :show, :update]
-  resources :favorites, only: [:index, :create, :show, :update]
+  resources :favorites, only: [:index, :create, :show]
   resources :users, only: [:index, :create, :show, :update]
-  post 'ratings/:id/edit', :to => 'ratings#update'
-  post 'favorites/:id/edit', :to => 'favorites#update'
+  # post 'ratings/:id/edit', :to => 'ratings#update'
+  # post 'favorites/:id/edit', :to => 'favorites#update'
   delete 'ratings/:id', :to => 'ratings#destroy'
   delete 'favorites/:id', :to => 'favorites#destroy'
   delete 'comments/:id', :to => 'comments#destroy'
