@@ -395,7 +395,7 @@ s9margaret = Tagline.find_or_create_by(tagline: "I can make you laugh or make yo
 s9melissa = Tagline.find_or_create_by(tagline: "Don't try to bully me, because I'm a boss.", housewife_id: melissa.id, season_id: rhonj9.id)
 s9teresa = Tagline.find_or_create_by(tagline: "These days, I don't throw punches...I roll with them.", housewife_id: teresa.id, season_id: rhonj9.id)
 # RHONJ S10 TAGLINES
-s10dolores = Tagline.find_or_create_by(tagline: "Behind ever strong man is a stronger Jersey girl.", housewife_id: dolores.id, season_id: rhonj10.id)
+s10dolores = Tagline.find_or_create_by(tagline: "Behind every strong man is a stronger Jersey girl.", housewife_id: dolores.id, season_id: rhonj10.id)
 s10jackie = Tagline.find_or_create_by(tagline: "Don’t let the minivan fool you. This mom won’t roll over for anyone.", housewife_id: jackie.id, season_id: rhonj10.id)
 s10jennifer = Tagline.find_or_create_by(tagline: "As I always say, plastic makes perfect.", housewife_id: jennifer.id, season_id: rhonj10.id)
 s10margaret = Tagline.find_or_create_by(tagline: "If you can’t take the truth, sue me.", housewife_id: margaret.id, season_id: rhonj10.id)
