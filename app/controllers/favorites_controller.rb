@@ -7,13 +7,28 @@ class FavoritesController < ActionController::API
     end
 
     def show
-      favorite = Favorite.find(params[:id])
-      render json: favorite
+      @favorite = Favorite.find(params[:id])
+      render json: @favorite.to_json(only: [:id, :housewife_id, :user_id],
+                                  include: [housewife: {only: [:firstname, :lastname, :image]}])
     end
 
     def index
-      render({json: Favorite.all})
+      @favorites = Favorite.all
+      render json: @favorites.to_json(only: [:id, :housewife_id, :user_id],
+                                  include: [housewife: {only: [:firstname, :lastname, :image]}])
     end
+
+    # def index
+    #   @taglines =  Tagline.all
+    #   render json: @taglines.to_json(only: [:tagline, :season_id],
+    #                         include: [housewife: {only: [:firstname, :lastname]}])
+    # end
+    #
+    # def show
+    #   @tagline = Tagline.find(params[:id])
+    #   render json: @tagline.to_json(only: [:tagline, :season_id],
+    #                         include: [housewife: {only: [:firstname, :lastname, :image]}])
+    # end
 
     def destroy
       @favorite = Favorite.find(params[:id])
