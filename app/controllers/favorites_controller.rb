@@ -9,13 +9,13 @@ class FavoritesController < ActionController::API
     def show
       @favorite = Favorite.find(params[:id])
       render json: @favorite.to_json(only: [:id, :housewife_id, :user_id],
-                                  include: [housewife: {only: [:firstname, :lastname, :image, :city, :favorites]}])
+                                  include: [housewife: {only: [:firstname, :lastname, :image, :city]}])
     end
 
     def index
       @favorites = Favorite.all
       render json: @favorites.to_json(only: [:id, :housewife_id, :user_id],
-                                  include: [housewife: {only: [:firstname, :lastname, :image, :city, :favorites]}])
+                                  include: [housewife: {only: [:firstname, :lastname, :image, :city]}])
     end
 
     # def index
