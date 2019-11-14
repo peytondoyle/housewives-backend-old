@@ -686,7 +686,7 @@ s2charrisse = Tagline.find_or_create_by(tagline: "Why cry over spilled milk, whe
 s2ashley = Tagline.find_or_create_by(tagline: "I've played by Potomac rules, now it's time to play by my own.", housewife_id: ashley.id, season_id: rhop2.id)
 # RHOP S3 TAGLINES
 s3gizelle = Tagline.find_or_create_by(tagline: "If you can't handle me being the word on the street, then stop listening.", housewife_id: gizelle.id, season_id: rhop3.id)
-s3karen = Tagline.find_or_create_by(tagline: "Baby don't believe what you hear, the Grand Dame still holds center court.", housewife_id: karen.id, season_id: rhop3.id)
+s3karen = Tagline.find_or_create_by(tagline: "Baby don't believe what you hear, the Grande Dame still holds center court.", housewife_id: karen.id, season_id: rhop3.id)
 s3monique = Tagline.find_or_create_by(tagline: "You'll never put me in a box, because I'm the whole darn package.", housewife_id: monique.id, season_id: rhop3.id)
 s3robyn = Tagline.find_or_create_by(tagline: "Life has its ups and downs, but my game is on the rebound.", housewife_id: robyn.id, season_id: rhop3.id)
 s3ashley = Tagline.find_or_create_by(tagline: "You may say I cause trouble, but I say I keep things interesting.", housewife_id: ashley.id, season_id: rhop3.id)
