@@ -110,7 +110,7 @@ s12nene = Tagline.find_or_create_by(tagline: "I’m on a spiritual journey and s
 s12cynthia = Tagline.find_or_create_by(tagline: "The only time that I look back is to see how far I've come.", housewife_id: cynthia.id, season_id: rhoa12.id)
 s12kandi = Tagline.find_or_create_by(tagline: "Don't check for me unless you got a check for me.", housewife_id: kandi.id, season_id: rhoa12.id)
 s12eva = Tagline.find_or_create_by(tagline: "I'm living my dreams, not above my means.", housewife_id: eva.id, season_id: rhoa12.id)
-s12kenya = Tagline.find_or_create_by(tagline: "I was gone with the wind, but now I'm back and twice as fabulous.", housewife_id: shamari.id, season_id: rhoa12.id)
+s12kenya = Tagline.find_or_create_by(tagline: "I was gone with the wind, but now I'm back and twice as fabulous.", housewife_id: kenya.id, season_id: rhoa12.id)
 s12porsha = Tagline.find_or_create_by(tagline: "This phoenix has risen, and I'm saying bye, ashes!", housewife_id: porsha.id, season_id: rhoa12.id)
 
 
