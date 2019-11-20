@@ -26,6 +26,7 @@ rhoa8 = Season.find_or_create_by(season: 8, city: "Atlanta")
 rhoa9 = Season.find_or_create_by(season: 9, city: "Atlanta")
 rhoa10 = Season.find_or_create_by(season: 10, city: "Atlanta")
 rhoa11 = Season.find_or_create_by(season: 11, city: "Atlanta")
+rhoa12 = Season.find_or_create_by(season: 12, city: "Atlanta")
 
 # RHOA TAGLINES
 # RHOA S1 TAGLINES
@@ -104,6 +105,14 @@ s11kandi = Tagline.find_or_create_by(tagline: "I count my blessings—and my che
 s11eva = Tagline.find_or_create_by(tagline: "I live a model life. Now I’m ready to be a top wife.", housewife_id: eva.id, season_id: rhoa11.id)
 s11shamari = Tagline.find_or_create_by(tagline: "I may be an open book, but that does not mean I am easily read.", housewife_id: shamari.id, season_id: rhoa11.id)
 s11porsha = Tagline.find_or_create_by(tagline: "I took a lot of left turns but now, things are just right.", housewife_id: porsha.id, season_id: rhoa11.id)
+# RHOA S12 TAGLINES
+s12nene = Tagline.find_or_create_by(tagline: "I’m on a spiritual journey and still traveling first class.", housewife_id: nene.id, season_id: rhoa12.id)
+s12cynthia = Tagline.find_or_create_by(tagline: "The only time that I look back is to see how far I've come.", housewife_id: cynthia.id, season_id: rhoa12.id)
+s12kandi = Tagline.find_or_create_by(tagline: "Don't check for me unless you got a check for me.", housewife_id: kandi.id, season_id: rhoa12.id)
+s12eva = Tagline.find_or_create_by(tagline: "I'm living my dreams, not above my means.", housewife_id: eva.id, season_id: rhoa12.id)
+s12kenya = Tagline.find_or_create_by(tagline: "I was gone with the wind, but now I'm back and twice as fabulous.", housewife_id: shamari.id, season_id: rhoa12.id)
+s12porsha = Tagline.find_or_create_by(tagline: "This phoenix has risen, and I'm saying bye, ashes!", housewife_id: porsha.id, season_id: rhoa12.id)
+
 
 # RHOBH HOUSEWIVES
 taylor = Housewife.find_or_create_by(firstname:"Taylor", lastname:"Armstrong", current: false, image:"https://www.bravotv.com/sites/bravo/files/legacy/images/person/body/2012/taylor-armstrong-full_0.png")
